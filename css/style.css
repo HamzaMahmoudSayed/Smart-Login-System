@@ -1,0 +1,105 @@
+:root {
+    --main-color: rgb(16, 201, 239);
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+nav,
+.welcome {
+    background-image: linear-gradient(to bottom right, black, rgb(38, 41, 102));
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .23rem rgba(16, 202, 239, 0.893);
+    border-color: var(--main-color);
+}
+
+.content {
+    border: 2px solid var(--main-color);
+    border-radius: 13px;
+    padding-inline: 55px;
+}
+
+.btnSignUp,
+.btnSignin,
+.btnLogIn,
+.btnLogOut {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.btnSignUp,
+.btnSignin,
+.btnLogIn,
+.btnLogOut a {
+    color: var(--main-color);
+}
+
+.btnSignin a {
+    color: var(--main-color);
+}
+
+.btnSignUp:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.btnSignUp:hover a {
+    color: white;
+}
+
+.btnLogOut:hover {
+    background-color: var(--main-color);
+
+}
+
+.btnLogOut:hover a {
+    color: white;
+}
+
+.btnSignin:hover a {
+    color: white;
+}
+
+.btnSignin:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.btnLogIn:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.btnLogIn a:hover {
+    color: white;
+}
+
+.signin,
+.signup {
+    display: flex;
+}
+
+.question {
+    position: relative;
+    top: -40%;
+    transform: translateY(40%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.welcome {
+    top: 40%;
+    transform: translateY(-40%);
+    width: 65%;
+}

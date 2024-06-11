@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/user.png" type="image/x-icon">
+    <title>Log In</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="content w-50 m-auto mt-5 bg-white bg-transparent py-4 d-block position-relative">
+        <h1 class="text-white text-center fw-lighter mb-5">Smart Login System</h1>
+        <input type="text" oninput="validateInputs(this)" class="form-control" id="userName"
+            placeholder="Enter Your Name...">
+        <div class="alert alert-danger mb-2 mt-1 d-none py-1">
+            <small>The user name must be at least 3 characters and a maximum of 15 characters.</small>
+        </div>
+        <input type="email" oninput="validateInputs(this)" class="form-control mt-3" id="userEmail"
+            placeholder="Enter Your Email...">
+        <div class="alert d-none alert-danger mt-1 mb-2 py-1">
+            <small>The user's email must match this email xxxx@gmail.com.</small>
+        </div>
+        <input type="password" oninput="validateInputs(this)" class="form-control mt-3" id="userPassword"
+            placeholder="Enter Your Password...">
+        <div class="alert d-none alert-danger mt-1 py-1">
+            <small>The User Password must be at least 8 characters, at least one upper case English letter, one lower
+                case English letter, one
+                number and one special character.</small>
+        </div>
+        <p id="validOrUnvalid" class="text-danger mt-2"></p>
+        <a id="link"> <button class="btn fw-bold mt-2 btnSignUp" id="btnSignUp">Sign Up</button></a>
+        <div class="signin m-auto w-50 mt-3 mb-3">
+            <p class="text-white fw-lighter question me-3 text-center">You have an account?</p>
+            <button class="btn fw-bold btnSignin"><a href="index.html">Sign In</a></button>
+        </div>
+    </div>
+
+
+    <script src=" js/main.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
